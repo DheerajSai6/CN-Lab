@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="compiler-styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 id="main-title" class="fade-in">Computer Networks Laboratory</h1>
+        <button id="theme-toggle" class="animated-button-small">Toggle Theme</button>
+    </header>
+
+    <main>
+        <section id="home-page" class="active">
+            <div class="week-cards-grid">
+                <!-- Week cards will be dynamically loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="week-details-page" class="hidden">
+            <h2 id="week-detail-title"></h2>
+            <div class="detail-content">
+                <p id="week-detail-explanation"></p>
+                <div class="image-container">
+                    <img id="week-detail-image" src="" alt="Concept Diagram">
+        </div>
+
+                <!-- Sub-program navigation for Week 1 -->
+                <div id="sub-program-navigation" class="hidden">
+                    <h4 id="program-title"></h4>
+                    <div class="program-nav-buttons">
+                        <button id="prev-program-btn" class="animated-button-small">&lt; Previous</button>
+                        <button id="next-program-btn" class="animated-button-small">Next &gt;</button>
+            </div>
+        </div>
+
+                <div class="code-container">
+                    <h3>C Program</h3>
+                    <pre><code id="week-detail-code" class="language-c"></code></pre>
+                </div>
+                <div class="output-container">
+                    <h3>Simulated Output</h3>
+                    <pre id="week-detail-output"></pre>
+                </div>
+
+                <!-- C Compiler Section -->
+                <div class="compiler-container">
+                    <h3>C Code Compiler</h3>
+                    <div class="compiler-editor">
+                        <div class="code-editor-wrapper">
+                            <div class="line-numbers" id="line-numbers"></div>
+                            <textarea id="c-code-editor" placeholder="Write your C code here..." rows="20"></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Interactive Input Section -->
+                    <div id="input-section" class="input-section hidden">
+                        <h4>Program Inputs:</h4>
+                        <div id="input-fields"></div>
+                        <button id="submit-inputs-btn" class="compiler-button">Submit Inputs & Run</button>
+                    </div>
+                    
+                    <div class="compiler-controls">
+                        <button id="run-code-btn" class="compiler-button">Run Code</button>
+                        <button id="clear-code-btn" class="compiler-button-secondary">Clear</button>
+                        <button id="settings-btn" class="compiler-button-secondary">Settings</button>
+                    </div>
+                    <!-- Settings Panel -->
+                    <div id="settings-panel" class="settings-panel hidden">
+                        <h4>Compiler Settings</h4>
+                        <div class="settings-content">
+                            <div class="setting-group">
+                                <label for="api-provider">API Provider:</label>
+                                <select id="api-provider">
+                                    <option value="judge0">Judge0 (Recommended)</option>
+                                    <option value="simulation">Simulation Mode</option>
+                                </select>
+                            </div>
+                            <div class="setting-group">
+                                <label for="rapidapi-key">RapidAPI Key (for Judge0):</label>
+                                <input type="password" id="rapidapi-key" placeholder="Enter your RapidAPI key">
+                                <small>Get your free key at <a href="https://rapidapi.com" target="_blank">rapidapi.com</a></small>
+                            </div>
+                            <div class="setting-group">
+                                <label for="timeout-setting">Timeout (seconds):</label>
+                                <input type="number" id="timeout-setting" value="30" min="5" max="60">
+                            </div>
+                            <div class="settings-buttons">
+                                <button id="save-settings" class="compiler-button">Save Settings</button>
+                                <button id="cancel-settings" class="compiler-button-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="compiler-output" class="compiler-output hidden">
+                        <h4>Compiler Output</h4>
+                        <div id="compiler-result"></div>
+                    </div>
+                </div>
+            <button id="back-to-home" class="animated-button">Back to Home</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
