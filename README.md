@@ -117,7 +117,7 @@ A modern, comprehensive web-based learning platform for Computer Networks concep
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/DheerajSai24/CN-laboratory.git
+   git clone https://github.com/DheerajSai6/CN-Lab.git
    ```
 
 2. **Navigate to the project directory**:
@@ -262,3 +262,4 @@ For questions, issues, or suggestions:
 **Made with ❤️ for Computer Networks Education**
 
 **Happy Learning! 🚀📚**
+
