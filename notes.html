@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Computer Networks Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Computer Networks Lab</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recordings.html" class="nav-link">Recordings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="notes.html" class="nav-link active">Notes</a>
+                </li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <h1 id="main-title" class="fade-in">Study Notes & Resources</h1>
+        <p class="header-subtitle">Download comprehensive notes for all weeks</p>
+    </header>
+
+    <main class="notes-main">
+        <div class="notes-container">
+            <div class="week-cards-grid">
+                <!-- Week 1 -->
+                <div class="week-card note-week-card" data-week="1">
+                    <div class="week-card-content">
+                        <h3>Week 1</h3>
+                        <p>Data Link Layer Framing Methods</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(1)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="week-card note-week-card" data-week="2">
+                    <div class="week-card-content">
+                        <h3>Week 2</h3>
+                        <p>CRC Code Implementation</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(2)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="week-card note-week-card" data-week="3">
+                    <div class="week-card-content">
+                        <h3>Week 3</h3>
+                        <p>Sliding Window Protocol (Go-Back-N)</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(3)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="week-card note-week-card" data-week="4">
+                    <div class="week-card-content">
+                        <h3>Week 4</h3>
+                        <p>Dijkstra's Shortest Path Algorithm</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(4)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 5 -->
+                <div class="week-card note-week-card" data-week="5">
+                    <div class="week-card-content">
+                        <h3>Week 5</h3>
+                        <p>Broadcast Tree for a Subnet</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(5)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 6 -->
+                <div class="week-card note-week-card" data-week="6">
+                    <div class="week-card-content">
+                        <h3>Week 6</h3>
+                        <p>Distance Vector Routing Algorithm</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(6)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 7 -->
+                <div class="week-card note-week-card" data-week="7">
+                    <div class="week-card-content">
+                        <h3>Week 7</h3>
+                        <p>Data Encryption and Decryption</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(7)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 8 -->
+                <div class="week-card note-week-card" data-week="8">
+                    <div class="week-card-content">
+                        <h3>Week 8</h3>
+                        <p>Congestion Control (Leaky Bucket)</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(8)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 9 -->
+                <div class="week-card note-week-card" data-week="9">
+                    <div class="week-card-content">
+                        <h3>Week 9</h3>
+                        <p>Frame Sorting Technique (Buffers)</p>
+                        <button class="download-notes-btn" onclick="downloadNotes(9)">📥 Download Notes</button>
+                    </div>
+                </div>
+
+                <!-- Week 10 -->
+                <div class="week-card note-week-card" data-week="10">
+                    <div class="week-card-content">
+                        <h3>Week 10</h3>
+                        <p>Packet Capture and Analysis (Wireshark)</p>
+                        <div class="week-card-image">
+                            <img src="assets/week10.jpg" alt="Week 10 - Wireshark Analysis">
+                        </div>
+                        <button class="download-notes-btn" onclick="downloadNotes(10)">� Download Notes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Download Modal -->
+    <div id="download-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3>Download Started</h3>
+            </div>
+            <div class="modal-body">
+                <div class="download-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span id="download-filename">Preparing download...</span>
+                        <span id="download-percentage">0%</span>
+                    </div>
+                </div>
+                <p>Your download will begin shortly. The file will be saved to your default downloads folder.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Download notes function
+        function downloadNotes(weekNumber) {
+            // You can later provide the actual PDF URLs here
+            const weekUrls = {
+                1: 'notes/week1-data-link-layer-framing.pdf',
+                2: 'notes/week2-crc-code-implementation.pdf',
+                3: 'notes/week3-sliding-window-protocol.pdf',
+                4: 'notes/week4-dijkstra-algorithm.pdf',
+                5: 'notes/week5-broadcast-tree.pdf',
+                6: 'notes/week6-distance-vector-routing.pdf',
+                7: 'notes/week7-data-encryption.pdf',
+                8: 'notes/week8-congestion-control.pdf',
+                9: 'notes/week9-frame-sorting.pdf',
+                10: 'notes/week10-wireshark-analysis.pdf'
+            };
+
+            const weekTitles = {
+                1: 'Data Link Layer Framing Methods',
+                2: 'CRC Code Implementation',
+                3: 'Sliding Window Protocol (Go-Back-N)',
+                4: 'Dijkstra\'s Shortest Path Algorithm',
+                5: 'Broadcast Tree for a Subnet',
+                6: 'Distance Vector Routing Algorithm',
+                7: 'Data Encryption and Decryption',
+                8: 'Congestion Control (Leaky Bucket)',
+                9: 'Frame Sorting Technique (Buffers)',
+                10: 'Packet Capture and Analysis (Wireshark)'
+            };
+
+            if (weekUrls[weekNumber]) {
+                // Show download modal with progress
+                downloadFile(`week${weekNumber}-notes.pdf`, `Week ${weekNumber}: ${weekTitles[weekNumber]} Notes.pdf`);
+            } else {
+                alert('Notes for this week are not available yet.');
+            }
+        }
+
+        // Download functionality
+        function downloadFile(filename, displayName) {
+            // Show download modal
+            const modal = document.getElementById('download-modal');
+            const filenameElement = document.getElementById('download-filename');
+            const progressFill = document.getElementById('progress-fill');
+            const percentageElement = document.getElementById('download-percentage');
+            
+            modal.classList.remove('hidden');
+            filenameElement.textContent = displayName;
+            
+            // Simulate download progress
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress > 100) progress = 100;
+                
+                progressFill.style.width = progress + '%';
+                percentageElement.textContent = Math.round(progress) + '%';
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        // Create and trigger download
+                        const link = document.createElement('a');
+                        link.href = '#'; // In real implementation, this would be the actual file URL
+                        link.download = filename;
+                        link.click();
+                    }, 1000);
+                }
+            }, 200);
+        }
+        
+        function previewFile(filename) {
+            alert(`Preview functionality for ${filename} would open here in a real implementation.`);
+        }
+        
+        // Close modal functionality
+        document.querySelector('.close-modal').addEventListener('click', () => {
+            document.getElementById('download-modal').classList.add('hidden');
+        });
+        
+        // Close modal when clicking outside
+        document.getElementById('download-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'download-modal') {
+                document.getElementById('download-modal').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

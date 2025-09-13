@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Computer Networks Lab</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recordings.html" class="nav-link">Recordings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="notes.html" class="nav-link">Notes</a>
+                </li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <h1 id="main-title" class="fade-in">Computer Networks Laboratory</h1>
+    </header>
+
+    <main>
+        <section id="home-page" class="active">
+            <div class="week-cards-grid">
+                <!-- Week cards will be dynamically loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="week-details-page" class="hidden">
+            <h2 id="week-detail-title"></h2>
+            <div class="detail-content">
+                <p id="week-detail-explanation"></p>
+                <div class="image-container">
+                    <img id="week-detail-image" src="" alt="Concept Diagram">
+        </div>
+
+                <!-- Sub-program navigation for Week 1 -->
+                <div id="sub-program-navigation" class="hidden">
+                    <h4 id="program-title"></h4>
+                    <div class="program-nav-buttons">
+                        <button id="prev-program-btn" class="animated-button-small">&lt; Previous</button>
+                        <button id="next-program-btn" class="animated-button-small">Next &gt;</button>
+            </div>
+        </div>
+
+                <div class="code-container">
+                    <h3>C Program</h3>
+                    <pre><code id="week-detail-code" class="language-c"></code></pre>
+                </div>
+                <div class="output-container">
+                    <h3>Simulated Output</h3>
+                    <pre id="week-detail-output"></pre>
+                </div>
+
+                <!-- C Compiler Section -->
+                <div class="compiler-container">
+                    <h3>Online C Compiler</h3>
+                    <div class="compiler-editor">
+                        <div class="code-editor-wrapper">
+                            <div class="line-numbers" id="line-numbers"></div>
+                            <textarea id="c-code-editor" placeholder="Write your C code here..." rows="15"></textarea>
+                        </div>
+                    </div>
+                    <div class="compiler-controls">
+                        <button id="run-code-btn" class="compiler-button">Run Code</button>
+                        <button id="clear-code-btn" class="compiler-button-secondary">Clear</button>
+                    </div>
+                    <div id="compiler-output" class="compiler-output hidden">
+                        <h4>Output:</h4>
+                        <pre id="compiler-result"></pre>
+                    </div>
+                </div>
+
+            <button id="back-to-home" class="animated-button">Back to Home</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

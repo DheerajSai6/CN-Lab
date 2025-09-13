@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Computer Networks Lab</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recordings.html" class="nav-link active">Recordings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="notes.html" class="nav-link">Notes</a>
+                </li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <h1 id="main-title" class="fade-in">Video Recordings</h1>
+        <p class="header-subtitle">Watch comprehensive tutorials for each week's concepts</p>
+    </header>
+
+    <main class="recordings-main">
+        <div class="recordings-container">
+            <!-- Week 1 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 1: Data Link Layer Framing Methods</h2>
+                    <div class="week-badge">3 Videos</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/i1BPUxO63aQ?si=pDs9dDNrHn05ksaK" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Character Counting Method</h3>
+                            <p>Learn how character counting works for frame delimitation, its advantages and limitations in data link layer protocols.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 15:30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/TYJjbLZti8g?si=BFhfAMVp8Q7_2USI" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Character Stuffing Technique</h3>
+                            <p>Understand how special delimiter characters are used for framing and how to handle escape sequences in data.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 18:45</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/toS0RXNaTaE?si=l6rj-6o9UV4n757b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Bit Stuffing Protocol</h3>
+                            <p>Deep dive into bit-level framing methods used in modern protocols like HDLC and PPP.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 22:10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 2 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 2: CRC Code Implementation</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/A9g6rTMblz4?si=Ws-VeOJOuV7Yq93P" 
+                                title="CRC Algorithm Implementation"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>CRC Algorithm Implementation</h3>
+                            <p>Master Cyclic Redundancy Check with polynomial mathematics and practical implementation examples for error detection.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 25:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 3 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 3: Sliding Window Protocol (Go-Back-N)</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/LnbvhoxHn8M?si=zMdlidRKd1BRjfG-" 
+                                title="Go-Back-N Sliding Window Protocol"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Go-Back-N Sliding Window Protocol</h3>
+                            <p>Learn advanced flow control mechanisms with pipelined transmission and window-based error recovery strategies.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 28:15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 4 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 4: Dijkstra's Shortest Path Algorithm</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/bZkzH5x0SKU?si=GiLyogY2vs8a9A7v" 
+                                title="Dijkstra's Shortest Path for Networks"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Dijkstra's Shortest Path for Networks</h3>
+                            <p>Learn the classic algorithm for finding optimal routes in network topology and its applications in routing protocols.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 24:45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 5 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 5: Broadcast Tree for a Subnet</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/UHRPtNZ_Rz4?si=q-VHgxwWLtjFFn2e" 
+                                title="Broadcast Tree Construction"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Broadcast Tree Construction</h3>
+                            <p>Understand spanning tree algorithms for efficient broadcast communication and prevention of broadcast storms in subnets.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 20:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 6 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 6: Distance Vector Routing Algorithm</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/hdpnoOcrGck?si=vRFYTYVq5WYGjnb-" 
+                                title="Distance Vector Routing Protocol"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Distance Vector Routing Protocol</h3>
+                            <p>Master distributed routing algorithms with Bellman-Ford equation and understand convergence properties and limitations.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 32:20</span>
+                                <span class="difficulty hard">🎓 Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 7 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 7: Data Encryption and Decryption</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/4KiwoeDJFiA?si=IV3sXp0_BHsdp1aP" 
+                                title="Network Security Encryption"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Network Security Encryption</h3>
+                            <p>Learn fundamental encryption and decryption techniques for securing data transmission in computer networks.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 18:45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 8 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 8: Congestion Control (Leaky Bucket)</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/zjfPh7sar_Y?si=LowF0BGNw1Np2aPz" 
+                                title="Leaky Bucket Algorithm"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Leaky Bucket Algorithm</h3>
+                            <p>Master traffic shaping techniques for congestion control and understand Quality of Service (QoS) implementations.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 26:10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 9 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 9: Frame Sorting Technique (Buffers)</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/NhpzBldHOYo?si=nkvDRGnSVaivyEka" 
+                                title="Frame Sorting and Buffer Management"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Frame Sorting and Buffer Management</h3>
+                            <p>Learn advanced buffer management strategies for handling out-of-order frames in network communication protocols.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 22:35</span>
+                                <span class="difficulty medium">📖 Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 10 Recordings -->
+            <section class="recording-week">
+                <div class="week-header">
+                    <h2 class="week-title">Week 10: Packet Capture and Analysis (Wireshark Concept)</h2>
+                    <div class="week-badge">1 Video</div>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/qTaOZrDnMzQ?si=l0pEfz845lCaE_sr" 
+                                title="Network Packet Analysis with Wireshark"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Network Packet Analysis with Wireshark</h3>
+                            <p>Master network troubleshooting and security analysis using packet capture tools and protocol analysis techniques.</p>
+                            <div class="video-meta">
+                                <span class="duration">⏱️ 35:20</span>
+                                <span class="difficulty hard">🎓 Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Playlist Section -->
+            <section class="playlist-section">
+                <div class="playlist-header">
+                    <h2>Complete Course Playlist</h2>
+                    <p>Watch all 10 weeks of videos in sequence for comprehensive understanding</p>
+                </div>
+                <div class="playlist-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/videoseries?list=PLrAXtmRdnEQy4nkDLWcY4KmHZL_lV6VhQ" 
+                        title="Computer Networks Laboratory - Complete Playlist"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="playlist-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Weeks Covered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">13</span>
+                        <span class="stat-label">Total Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5.2hrs</span>
+                        <span class="stat-label">Total Duration</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
